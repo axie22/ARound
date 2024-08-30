@@ -24,7 +24,6 @@ const ProductList = () => {
   const handleDelete = async (id) => {
     try {
       await axios.delete(`http://localhost:5001/api/products/${id}`);
-      // Update the local state to remove the deleted product
       setProducts(products.filter(product => product.id !== id));
     } catch (error) {
       console.error('Error deleting product:', error);
@@ -38,7 +37,12 @@ const ProductList = () => {
           Simple Card List
         </Typography>
       </Box>
-      <Grid container spacing={3}>
+      <Grid
+        container
+        spacing={3}
+        justifyContent="center"
+        alignItems="center"
+      >
         {products.map((product) => (
           <Grid item xs={12} sm={6} md={4} key={product.id}>
             <Card>
