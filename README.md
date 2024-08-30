@@ -1,11 +1,47 @@
-# SWE INTERVIEW TEST 
-THIS IS TO TEST YOUR SKILLS TO MEET OUR APP DEVELOPMENT REQUIREMENTS
+# Simple Card List App
 
-1. Clone this repo to your local machine.
-2. Read `Assignment Requirements` carefully and follow it.
-4. Please commit your entire code to `your own Github repository` 
-5. On your repo, please add step-by-step instructions on how to launch (for both the Backend and Frontend) to the `README.md`
-6. Share your repo link with us via email.
+This project is a simple web application that displays a list of products in card format. Users can view product cards and delete cards. The application consists of a frontend built with React and Material UI, and a backend built with Node.js and Express.
 
-HAPPY CODING! </br>
-A Round Entertainment
+## Table of Contents
+- [Simple Card List App](#simple-card-list-app)
+  - [Table of Contents](#table-of-contents)
+  - [Setup Instructions](#setup-instructions)
+    - [Backend Setup](#backend-setup)
+    - [Frontend Setup](#frontend-setup)
+
+## Setup Instructions
+
+### Backend Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+   ```
+2. **Navigate to the Backend Directory**
+   ``` bash
+   cd swe-interview-test/StarterCode/backend
+   ```
+3. **Install dependencies**
+   ``` bash
+   npm install
+   ```
+4. **Start the backend server**
+   ```bash
+   node index.js
+   ```
+
+### Frontend Setup
+
+1. **Navigate to the Frontend Directory**
+   ``` bash
+   cd ../frontend
+   ```
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+3. **Start the Frontend Server**
+   ```bash 
+   npm start
+   ```
