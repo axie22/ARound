@@ -8,8 +8,6 @@ const PORT = process.env.PORT || 5001;
 app.use(express.json());
 app.use(cors());
 
-//implement the CORS config
-
 //products array
 let products = [
     { id: 1, name: 'Product 1', description: 'description 1', price: 100, imageUrl: '' },

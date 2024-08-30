@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Grid, Card, CardContent, CardMedia, Typography, IconButton } from '@mui/material';
+import { Container, Grid, Card, CardContent, CardMedia, Typography, IconButton, Box} from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 import axios from 'axios';
 
@@ -33,6 +33,11 @@ const ProductList = () => {
 
   return (
     <Container>
+      <Box sx={{ textAlign: 'center', marginTop: 4, marginBottom: 4 }}>
+        <Typography variant="h3" component="h1" gutterBottom>
+          Simple Card List
+        </Typography>
+      </Box>
       <Grid container spacing={3}>
         {products.map((product) => (
           <Grid item xs={12} sm={6} md={4} key={product.id}>
