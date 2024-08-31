@@ -6,6 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 
 app.use(express.json());
+// CORS handling
 app.use(cors({
     origin: 'http://localhost:3000', 
     methods: 'GET,POST,DELETE', 
@@ -43,6 +44,7 @@ app.delete('/api/products/:id', (req, res) => {
     res.json({ message: 'Product deleted successfully' });
 });
 
+// throw error if we aren't able to start the app
 try {
     app.listen(PORT, () => {
         console.log(`Server is running on port ${PORT}`);
